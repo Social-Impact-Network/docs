@@ -46,10 +46,10 @@ of easy tradability of digital securities and authentically demonstrate positive
      - Repository
      - Beschreibung
    * - Platform (Frontend)
-     - `GitHub <https://github.com/Social-Impact-Network/Frontend>`_
+     - `GitHub_inv <https://github.com/Social-Impact-Network/Frontend>`_
      - SI platform (frontend) allows easy interaction with the `SI token <https://github.com/Social-Impact-Network/Frontend>`_ and the `TIM <https://github.com/Social-Impact-Network/Frontend>`_.
    * - Solar-Impact-Bridge
-     - `GitHub <https://github.com/Social-Impact-Network/SPMonitorBridge-Server>`_
+     - `GitHub_inv2 <https://github.com/Social-Impact-Network/SPMonitorBridge-Server>`_
      - Solar-Impact-Bridge receives the impact values of PV systems and stores them in the decentralized BigChainDB network.
    * - SI Node
      - Link...
