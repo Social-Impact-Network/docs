@@ -7,7 +7,7 @@
 Welcome to Social Impact Network's documentation!
 =================================================
 
-Social Impact Network is the place where you can easily invest in Social Impact Projects (in projects having social impact) 
+Social Impact Network is the place where you can easily invest in in projects having social impact.
 
 The magic behind Social Impact Network: Your investment is completely transparent, flexible and secure with blockchain technology applied to your investments.
 
@@ -20,7 +20,7 @@ This documentation will help you understand the Social Impact Network ecosystem.
 You will learn how to extract impact values from the network, how to run your own Social Impact Node and how to develop software that interacts with the Social Impact Network (e.g. DeFI projects).
 
 
-The entire Social Impact Network is an open source project, so feel free to suggest any new topics or content via `GitHub <https://github.com/Social-Impact-Network/Frontend>`_.
+The entire Social Impact Network is an open source project, so feel free to suggest any new topics or content via `GitHub <https://github.com/Social-Impact-Network/docs/issues>`_.
 
 
 
