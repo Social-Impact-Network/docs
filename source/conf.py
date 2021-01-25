@@ -22,7 +22,7 @@ copyright = '2021, Felix H. C. Maduakor, Cedric Lehmann, Nikola Marokovic'
 author = 'Felix H. C. Maduakor, Cedric Lehmann, Nikola Marokovic'
 
 # The full version, including alpha/beta/rc tags
-release = '0.01'
+release = '0.1.0-alpha.0'
 
 
 # -- General configuration ---------------------------------------------------
