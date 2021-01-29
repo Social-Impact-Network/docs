@@ -1,4 +1,4 @@
-[![Website](https://img.shields.io/website-up-down-green-red/https/social-impact-network.github.io/docs/.svg?label=social-impact-network.github.io/docs&style=flat-square)](https://social-impact-network.github.io/docs)
+[![Website](https://img.shields.io/website-up-down-green-red/https/social-impact-network.github.io/docs/.svg?label=social-impact-network.github.io/docs&style=plastic)](https://social-impact-network.github.io/docs)
 [![License](https://img.shields.io/github/license/Social-Impact-Network/docs?style=plastic)](https://opensource.org/licenses/MIT)
 [![Travis](https://img.shields.io/travis/com/Social-Impact-Network/docs/master?style=plastic)](https://travis-ci.com/github/Social-Impact-Network/docs)
 [![GitHub issues](https://img.shields.io/github/issues/Social-Impact-Network/docs?style=plastic)](https://github.com/Social-Impact-Network/docs/issues)
