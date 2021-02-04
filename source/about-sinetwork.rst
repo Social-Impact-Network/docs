@@ -17,7 +17,7 @@ Basic Facts
 #. Dividend payments are regularly initiated by the beneficiaries of the projects in `DAI (Stablecoin) <https://medium.com/mycrypto/what-is-dai-and-how-does-it-work-742d09ba25d6>`_ through SI token to investors.
 #. SI Network operates several social impact projects. Investors of SI Token participate in the performance, risks and profits of all projects.
 #. All project impact values (e.g. KwH generated, Co2 saved) are stored in a tamper-proof database.
-#. Each of the project's impact values are publicly viewable and are not stored in an encrypted format.
+#. Each of the project's impact values are publicly available and are not stored in an encrypted format.
 #. Anyone can operate Social Impact Nodes (SI nodes) to increase the security and availability of stored impact values.
 #. The operation of SI nodes usually has no regulatory implication and no direct financial benefit for the operator.
 #. SI Token is a security token under European law. Buying and selling may be restricted in some countries.
@@ -30,8 +30,7 @@ Technical structure of Social Impact Network
 .. image:: http://www.plantuml.com/plantuml/png/hSq_IyP030RmFPyY70xlEtbTEhzJeKD5Q3TnECyWfVUd93bKIh-xY8gs1HTzfl3ZIN8HTQmb1f2PHoMyUYWo9XAvvUn91E-g-gMghwlw7XTeTlaRs0FOJx3VEO3Tm_76xr-Q_uCL09YyklGK20tssOykO1jdvnLlI9ypJmONm1-jRMd84oKyzUt7T3QuAG_iaioEAUdNHaTE2bDyfzFGTjY_Yb8y6rZXGkcnnF06
     :alt: Basic overview
 
-The structure of Social Impact Network is simple for understanding.
-It consists of a smart contract component that implements the logic of the fully automated funding process on the public blockchain (Ethereum). 
+The structure of Social Impact Network consists of a smart contract component that implements the logic of the fully automated funding process on the public blockchain (Ethereum). 
 The entire security is digitally represented by `Social Impact Token (SI Token) <./social-impact-token.html#social-impact-token-si-token>`_.
 Additionally, there is a `Transparent Impact Measurement System (TIM) <./transparent-impact-measurement.html#transparent-impact-measurement-system-tim>`_ that securely stores the `impact values <https://github.com/Social-Impact-Network/Frontend>`_ of each funded project.
 This structure makes the funding and impact measurement processes more transparent, automated and secure. It offers investors the advantages
@@ -80,6 +79,5 @@ The impact values are essentially any data that can be used to measure positive 
 (e.g., CO2 saved, energy generated) and financial performance of the projects (e.g., APY).
 TIM stores this data and other general project data in a decentralized, public, immutable database (BigChainDB).
 Each SI node maintains a full copy of the database. Multiple independent SI nodes ensure that the stored data cannot be tampered.
-Help us protect Social Impact Network by `Setting Up a SI Node <./transparent-impact-measurement.html#social-impact-nodes>`_.
-
+**We would like to ask you to help us protect Social Impact Network by Setting Up a SI Node.**
 

@@ -8,7 +8,7 @@ Social Impact Token (SI Token)
 ===============================
 .. warning:: Currently, only Social Impact Prototype Token (SIP Token) exists. See `SIP Token <#social-impact-prototype-token-sip-token>`_
 
-Social Impact Token (SI Token) is used for payment flows (including investment, allocation, interest and payouts).
+Social Impact Token (SI Token) is used for payment flows (including investment, money allocation, interest rate and payouts).
 SI Token is an ERC20 token on the Ethereum Blockchain, programmed in Solidity.
 All interactions with SI Token can be done through `SI platform (frontend) <./platform.html#social-impact-platform-frontend>`_.
 Since the token was implemented according to the ERC20 standard, the basic functions (e.g. sending and receiving) can also be performed via any ERC20-enabled wallet.

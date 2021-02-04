@@ -7,20 +7,19 @@
 Welcome to Social Impact Network's documentation!
 =================================================
 
-Social Impact Network is the place where you can easily invest in projects having social impact.
+Social Impact Network is the place where you can easily invest and make a measurable social and environmental impact.
 
-The magic behind Social Impact Network: Your investment is completely transparent, flexible and secure with blockchain technology applied to your investments.
+You gain full transparency, flexibility, and security for your investment by utilizing Social Impact Network, and magic behind lays in blockchain technology.  
 
-* 	Transparency: You can track the impact of your investment such as clean energy produced and CO2 emissions saved.
+* 	Transparency: You can track the performance and impact of your investment in real time (e.g. renewable energy produced, CO2 emissions reduced etc.).
 * 	Flexibility: You can trade your investment at any time.
-* 	Security: All funds allocation and distribution as well as payouts to investors are securely managed by smart contracts on a public blockchain.
-
+* 	Security: All funds allocation and distribution as well as payouts to investors are securely managed by Smart Contracts on a public blockchain
 
 This documentation will help you understand the Social Impact Network ecosystem.
 You will learn how to extract impact values from the network, how to run your own Social Impact Node and how to develop software that interacts with Social Impact Network (e.g. DeFI projects).
 
 
-The entire Social Impact Network is an open source project, so feel free to suggest any new topics or content via `GitHub <https://github.com/Social-Impact-Network/docs/issues>`_.
+The entire Social Impact Network is an open-source project, so feel free to suggest any new topics or content via `GitHub <https://github.com/Social-Impact-Network/docs/issues>`_.
 
 
 
