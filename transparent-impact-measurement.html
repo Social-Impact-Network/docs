@@ -1,0 +1,411 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Transparent Impact Measurement System (TIM) &mdash; Social Impact Network Documentation 0.1.0-alpha.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Social Impact Platform (Frontend)" href="platform.html" />
+    <link rel="prev" title="Social Impact Token (SI Token)" href="social-impact-token.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Social Impact Network Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Social Impact Network Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about-sinetwork.html">About Social Impact Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="social-impact-token.html">Social Impact Token (SI Token)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Transparent Impact Measurement System (TIM)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#impact-values">Impact Values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#storage-of-impact-values">Storage of Impact Values</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#main-rest-api-urls">Main REST API URLs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#list-of-all-projects-with-associated-asset-id">List of all projects with associated Asset ID</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#initialization-of-a-project-list">Initialization of a project list</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#project-data">Project data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#initialization-of-a-new-project">Initialization of a new project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#view-solar-impact-values-and-news">View Solar impact values and news</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#insert-solar-impact-values">Insert Solar Impact Values</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#social-impact-nodes">Social Impact Nodes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Create your own SI Node</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#list-of-active-si-nodes">List of active SI Nodes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="platform.html">Social Impact Platform (Frontend)</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Social Impact Network Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Transparent Impact Measurement System (TIM)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/transparent-impact-measurement.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="transparent-impact-measurement-system-tim">
+<h1>Transparent Impact Measurement System (TIM)<a class="headerlink" href="#transparent-impact-measurement-system-tim" title="Permalink to this headline">¶</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Currently, SI Network only funds solar projects, therefore Impact Measurment System only stores data from solar projects</p>
+</div>
+<p>Transparent Impact Measurement (TIM) ensures that the funded social impact projects can be examined for the expected social impact. At the same time, impact measurement makes it possible to keep track of the performance of the investment. Through impact measurements, the investor can understand even minor discrepancies between the expected impact and the achieved impact. This information enables the review of the social impact of the investment for third parties. At the same time this information can be used for trading and investment decisions. Impact values also include the financial performance of individual projects and are tracked in real time.
+Impact values of all projects are publicly available.</p>
+<div class="section" id="impact-values">
+<h2>Impact Values<a class="headerlink" href="#impact-values" title="Permalink to this headline">¶</a></h2>
+<p>Impact values are all data that can be used to assess direct positive environmental and social benefits (e.g., clean electricity generation in kWh). In addition, impact values are also financial indicators that can be used to assess the financial performance of funded SI Network projects (e.g. APY).</p>
+<p>The following impact data is collected for all Social Impact Network projects:</p>
+<table class="colwidths-given docutils align-default" id="id2">
+<caption><span class="caption-text">General Impact Values for all SI projects</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Value</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Project description</p></td>
+<td><p>A general description of the project, description of the implementing aid organization, beneficiary and social impact.</p></td>
+</tr>
+<tr class="row-odd"><td><p>News</p></td>
+<td><p>Current news (e.g. installation status, payouts) of the project.</p></td>
+</tr>
+<tr class="row-even"><td><p>Location</p></td>
+<td><p>Location of the project implementation</p></td>
+</tr>
+<tr class="row-odd"><td><p>Project cost</p></td>
+<td><p>The total cost of the project</p></td>
+</tr>
+<tr class="row-even"><td><p>APY</p></td>
+<td><p>Average annual APY over the lifetime of the project.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Additionally, the following impact values are stored for solar projects:</p>
+<table class="colwidths-given docutils align-default" id="id3">
+<caption><span class="caption-text">Solar Impact Values</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Value</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Expected duration of the solar installation</p></td>
+<td><p>Duration of the whole project</p></td>
+</tr>
+<tr class="row-odd"><td><p>Estimated energy generated per year</p></td>
+<td><p>Amount of kwh generated on average per year by the project.</p></td>
+</tr>
+<tr class="row-even"><td><p>Avoided CO2</p></td>
+<td><p>Amount of CO2 (in KG) saved by the project over the entire project lifetime.</p></td>
+</tr>
+<tr class="row-odd"><td><p>System power</p></td>
+<td><p>The maximum power of the solar system in kwp</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="storage-of-impact-values">
+<h2>Storage of Impact Values<a class="headerlink" href="#storage-of-impact-values" title="Permalink to this headline">¶</a></h2>
+<p>SI Impact values are stored in a decentralized, publicly accessible database (BigChainDB). Anyone can operate SI nodes and thus obtain a complete image of all impact values. More independent SI Nodes participate in Social Impact Network, provide higher resistance against tampering SI impact values. By running an independent SI Node, the database becomes decentralized and protected from tampering. If you want to support SI network and protect impact values <a class="reference external" href="#id7">create your own SI node</a> . BigChainDB is used to store impact values.
+Querying impact values is performed through BigchainDB nodes (SI nodes). For a full explanation of BigChainDB and how it interacts with nodes, see <a class="reference external" href="https://docs.bigchaindb.com/en/latest/index.html">full BigchainDB documentation</a>.</p>
+<div class="section" id="main-rest-api-urls">
+<h3>Main REST API URLs<a class="headerlink" href="#main-rest-api-urls" title="Permalink to this headline">¶</a></h3>
+<p>Core Social Impact Network Team operate an SI node at <a class="reference external" href="http://3.121.239.82:9984/">http://3.121.239.82:9984/</a>. Impact values can be retrieved directly via this SI node or via other <a class="reference external" href="#list-of-active-si-nodesd">active nodes</a> Main REST API URLs for retrieving impact values (JSON) via this SI node:</p>
+<table class="colwidths-given docutils align-default" id="id4">
+<caption><span class="caption-text">Main API URLs</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Description</p></th>
+<th class="head"><p>URL</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>list of all projects with associated Asset IDs</p></td>
+<td><p><a class="reference external" href="http://3.121.239.82:9984/api/v1/transactions?asset_id=ed9dde99816fb0e378e7e67ad035555ee37f5c1b8976906af6363022aafb2f74&amp;last_tx=true">http://3.121.239.82:9984/api/v1/transactions?asset_id=ed9dde99816fb0e378e7e67ad035555ee37f5c1b8976906af6363022aafb2f74&amp;last_tx=true</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>General Project data (impact values)</p></td>
+<td><p><a class="reference external" href="http://3.121.239.82:9984/api/v1/transactions?asset_id=">http://3.121.239.82:9984/api/v1/transactions?asset_id=</a> [Project Asset ID]</p></td>
+</tr>
+<tr class="row-even"><td><p>Current KwH data and news</p></td>
+<td><p><a class="reference external" href="http://3.121.239.82:9984/api/v1/transactions?asset_id=">http://3.121.239.82:9984/api/v1/transactions?asset_id=</a> [Project Asset ID] &amp;last_tx=true</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="list-of-all-projects-with-associated-asset-id">
+<h3>List of all projects with associated Asset ID<a class="headerlink" href="#list-of-all-projects-with-associated-asset-id" title="Permalink to this headline">¶</a></h3>
+<p>A list of all SI projects can be found via Asset ID <code class="docutils literal notranslate"><span class="pre">ed9dde99816fb0e378e7e67ad035555ee37f5c1b8976906af6363022aafb2f74</span></code>: <a class="reference external" href="http://3.121.239.82:9984/api/v1/transactions?asset_id=ed9dde99816fb0e378e7e67ad035555ee37f5c1b8976906af6363022aafb2f74&amp;last_tx=true">http://3.121.239.82:9984/api/v1/transactions?asset_id=ed9dde99816fb0e378e7e67ad035555ee37f5c1b8976906af6363022aafb2f74&amp;last_tx=true</a>.
+Each project is located with its associated Asset ID in the JSON object as an array. You will find the asset IDs of all projects set up by SI network in entry <code class="docutils literal notranslate"><span class="pre">array[1].metadata.projects</span></code>.
+Asset ID is the identifier of a project. When a project is created via a CREATE transaction, this unique Asset ID is assigned and cannot be changed.  The Asset ID can thus be considered equivalent to a unique Project ID. The list of all project asset IDs thus provides a list of unique project IDs. These project IDs can be used to uniquely identify the project.</p>
+</div>
+<div class="section" id="initialization-of-a-project-list">
+<h3>Initialization of a project list<a class="headerlink" href="#initialization-of-a-project-list" title="Permalink to this headline">¶</a></h3>
+<p>To initialize a new project list, use  <a class="reference external" href="https://github.com/Social-Impact-Network/Frontend/blob/master/bigchain-interaction-scripts/create_project_list.js">create_project_list.js</a>.</p>
+</div>
+<div class="section" id="project-data">
+<h3>Project data<a class="headerlink" href="#project-data" title="Permalink to this headline">¶</a></h3>
+<p>Project data can be retrieved via Asset ID. This is done by accessing the <code class="docutils literal notranslate"><span class="pre">CREATE</span></code> transaction that created the project.
+Project data (e.g. description, duration) cannot be changed subsequently.
+Updates to the projects can only be submitted via the news function.
+To retrieve, for example, the project data of the project with asset ID <code class="docutils literal notranslate"><span class="pre">b2893734f1ab5533086d74cb0055ee285b58f94fa6f90695d69605b72b6361cd</span></code> via SI node of
+Social Impact Network, the following link can be used: <a class="reference external" href="http://3.121.239.82:9984/api/v1/transactions?asset_id=b2893734f1ab5533086d74cb0055ee285b58f94fa6f90695d69605b72b6361cd">http://3.121.239.82:9984/api/v1/transactions?asset_id=b2893734f1ab5533086d74cb0055ee285b58f94fa6f90695d69605b72b6361cd</a>.
+Within the JSON Object, Project data can be found at <code class="docutils literal notranslate"><span class="pre">array[0].asset.data</span></code>.</p>
+</div>
+<div class="section" id="initialization-of-a-new-project">
+<h3>Initialization of a new project<a class="headerlink" href="#initialization-of-a-new-project" title="Permalink to this headline">¶</a></h3>
+<p>To create a new project, use the script <a class="reference external" href="https://github.com/Social-Impact-Network/Frontend/blob/master/bigchain-interaction-scripts/create_new_project.js">create_new_project.js</a></p>
+</div>
+<div class="section" id="view-solar-impact-values-and-news">
+<h3>View Solar impact values and news<a class="headerlink" href="#view-solar-impact-values-and-news" title="Permalink to this headline">¶</a></h3>
+<p>To view specific impact values for solar projects, the last <code class="docutils literal notranslate"><span class="pre">UPDATE</span></code> transaction of an Asset ID is called. This can be done by adding parameter <code class="docutils literal notranslate"><span class="pre">&amp;last_tx=true</span></code> to project data URL.
+From this transaction it is possible to read how much solar power was generated by the solar project (generated khw), statistical solar data , as well as news regarding the project (e.g. implementation status).</p>
+<p>To retrieve, for example, the impact values and news of the project with asset ID <code class="docutils literal notranslate"><span class="pre">b2893734f1ab5533086d74cb0055ee285b58f94fa6f90695d69605b72b6361cd</span></code> via SI node of the
+Social Impact Network, the following link can be used: <a class="reference external" href="http://3.121.239.82:9984/api/v1/transactions?asset_id=b2893734f1ab5533086d74cb0055ee285b58f94fa6f90695d69605b72b6361cd&amp;last_tx=true">http://3.121.239.82:9984/api/v1/transactions?asset_id=b2893734f1ab5533086d74cb0055ee285b58f94fa6f90695d69605b72b6361cd&amp;last_tx=true</a> .
+Within the JSON Object, the impact values and news can be found at <code class="docutils literal notranslate"><span class="pre">array[0].metadata</span></code>.</p>
+</div>
+<div class="section" id="insert-solar-impact-values">
+<h3>Insert Solar Impact Values<a class="headerlink" href="#insert-solar-impact-values" title="Permalink to this headline">¶</a></h3>
+<p>To add new Solar Impact values to a project, the  <a class="reference external" href="https://github.com/Social-Impact-Network/Inverter-BigchainDB-Bridge">Inverter BigchainDB Bridge repo</a> can be used.
+Please review <code class="docutils literal notranslate"><span class="pre">README.md</span></code> before usage.</p>
+</div>
+</div>
+<div class="section" id="social-impact-nodes">
+<h2>Social Impact Nodes<a class="headerlink" href="#social-impact-nodes" title="Permalink to this headline">¶</a></h2>
+<p>SI Nodes enable authentic storage of impact values through decentralized storage.</p>
+<div class="section" id="id1">
+<h3>Create your own SI Node<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In the current prototype phase, external nodes cannot be added. If you would like to be notified as soon as you can set up your own node, please send us an email with subject “Set up node” to <a class="reference external" href="https://github.com/Social-Impact-Network/Frontend">EMAIL</a>.</p>
+</div>
+<p>Setting up your own node supports the security of the impact values and helps the overall social impact network.
+To set up your own network, please follow the description in the <a class="reference external" href="http://docs.bigchaindb.com/projects/server/en/latest/production-nodes/index.html">BigChainDB documentation</a>.</p>
+</div>
+<div class="section" id="list-of-active-si-nodes">
+<h3>List of active SI Nodes<a class="headerlink" href="#list-of-active-si-nodes" title="Permalink to this headline">¶</a></h3>
+<p>Here you find a non-exhaustive list of active nodes.
+If you want your SI node to be added to this list, please send us an email to <a class="reference external" href="mailto:felix&#46;maduakor&#37;&#52;&#48;mlcrypt&#46;de">Email</a>.</p>
+<table class="colwidths-given docutils align-default" id="id5">
+<caption><span class="caption-text">List of Known SI Nodes</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Type</p></th>
+<th class="head"><p>Owner</p></th>
+<th class="head"><p>Link</p></th>
+<th class="head"><p>Status</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Coordinator Node</p></td>
+<td><p>Social Impact Network</p></td>
+<td><p><a class="reference external" href="http://3.121.239.82:9984/api/v1/">http://3.121.239.82:9984/api/v1/</a></p></td>
+<td><p>Active</p></td>
+</tr>
+<tr class="row-odd"><td><p>Node</p></td>
+<td><p>Social Impact Network</p></td>
+<td><p><a class="reference external" href="http://3.121.239.82:9984/api/v1/">http://3.121.239.82:9984/api/v1/</a></p></td>
+<td><p>Active</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="platform.html" class="btn btn-neutral float-right" title="Social Impact Platform (Frontend)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="social-impact-token.html" class="btn btn-neutral float-left" title="Social Impact Token (SI Token)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Felix H. C. Maduakor, Cedric Lehmann, Nikola Marokovic.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
